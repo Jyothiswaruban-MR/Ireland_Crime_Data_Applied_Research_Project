@@ -27,7 +27,13 @@ Thumbs.db
 # data/raw/
 # *.csv
 
-# Large / intermediate data
+
+# Large / intermediate
 *.feather
 data/*.csv
-data/agg_*.csv
+
+# Allow cleaned final data explicitly
+!data/cleaned/*.csv
+
+# ML training artefacts (not needed for Streamlit)
+models/
