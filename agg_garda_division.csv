@@ -1,0 +1,247 @@
+year,garda_division,total_incidents,division_detection_rate
+2018,Cavan/Monaghan Division,5218,574.93
+2018,Clare Division,3533,577.41
+2018,"Co Cork, Cork City Division",521,230.33
+2018,"Co Cork, Cork North Division",64,3750.0
+2018,"Co Donegal, Donegal Division",56,2142.86
+2018,"Co Dublin, D.M.R. Eastern Division",1002,119.76
+2018,"Co Kerry, Cork West Division",59,2033.9
+2018,"Co Louth, Louth Division",133,902.26
+2018,"Co Mayo, Mayo Division",43,2790.7
+2018,"Co Tipperary, Tipperary Division",103,1165.05
+2018,"Co Waterford, Waterford Division",52,4615.38
+2018,"Co. Cork, Cork West Division",113,1061.95
+2018,"Co. Kerry, Kerry Division",37,3243.24
+2018,"Co. Offaly, Laois/Offaly Division",35,3428.57
+2018,"Co. Tipperary, Tipperary Division",22,5454.55
+2018,Cork City Division,11543,155.94
+2018,Cork North Division,4194,658.08
+2018,Cork West Division,2546,1413.98
+2018,D.M.R. Eastern Division,6707,71.57
+2018,D.M.R. North Central Division,21596,22.23
+2018,D.M.R. Northern Division,15969,97.69
+2018,D.M.R. South Central Division,18146,33.07
+2018,D.M.R. Southern Division,11937,60.32
+2018,D.M.R. Western Division,16990,56.5
+2018,Donegal Division,4343,994.7
+2018,Galway Division,7567,729.48
+2018,Kerry Division,5168,557.28
+2018,Kildare Division,7333,245.47
+2018,Kilkenny/Carlow Division,5183,578.82
+2018,Laois/Offaly Division,6098,472.29
+2018,Limerick Division,10623,327.59
+2018,Louth Division,6335,227.31
+2018,Mayo Division,3018,1113.32
+2018,Meath Division,5486,349.98
+2018,Roscommon/Longford Division,2864,921.79
+2018,Sligo/Leitrim Division,3025,714.05
+2018,Tipperary Division,5212,805.83
+2018,Waterford Division,5658,360.55
+2018,Westmeath Division,4266,365.68
+2018,Wexford Division,4603,573.54
+2018,Wicklow Division,4966,410.79
+2019,Cavan/Monaghan Division,5377,557.93
+2019,Clare Division,3336,611.51
+2019,"Co Cork, Cork City Division",701,171.18
+2019,"Co Cork, Cork North Division",80,3000.0
+2019,"Co Donegal, Donegal Division",85,1411.76
+2019,"Co Dublin, D.M.R. Eastern Division",1320,90.91
+2019,"Co Kerry, Cork West Division",40,3000.0
+2019,"Co Louth, Louth Division",192,625.0
+2019,"Co Mayo, Mayo Division",38,3157.89
+2019,"Co Tipperary, Tipperary Division",77,1558.44
+2019,"Co Waterford, Waterford Division",50,4800.0
+2019,"Co. Cork, Cork West Division",84,1428.57
+2019,"Co. Kerry, Kerry Division",32,3750.0
+2019,"Co. Offaly, Laois/Offaly Division",27,4444.44
+2019,"Co. Tipperary, Tipperary Division",25,4800.0
+2019,Cork City Division,11211,160.56
+2019,Cork North Division,4476,616.62
+2019,Cork West Division,2483,1449.86
+2019,D.M.R. Eastern Division,6819,70.39
+2019,D.M.R. North Central Division,22342,21.48
+2019,D.M.R. Northern Division,17074,91.37
+2019,D.M.R. South Central Division,18877,31.78
+2019,D.M.R. Southern Division,13086,55.02
+2019,D.M.R. Western Division,19592,49.0
+2019,Donegal Division,5128,842.43
+2019,Galway Division,7972,692.42
+2019,Kerry Division,5474,526.12
+2019,Kildare Division,7909,227.59
+2019,Kilkenny/Carlow Division,5025,597.01
+2019,Laois/Offaly Division,6297,457.36
+2019,Limerick Division,9853,353.19
+2019,Louth Division,6604,218.05
+2019,Mayo Division,2830,1187.28
+2019,Meath Division,5744,334.26
+2019,Roscommon/Longford Division,3286,803.41
+2019,Sligo/Leitrim Division,3217,671.43
+2019,Tipperary Division,4941,850.03
+2019,Waterford Division,5782,352.82
+2019,Westmeath Division,4777,326.56
+2019,Wexford Division,4379,602.88
+2019,Wicklow Division,5672,359.66
+2020,Cavan/Monaghan Division,4359,688.23
+2020,Clare Division,2930,696.25
+2020,"Co Cork, Cork City Division",456,263.16
+2020,"Co Cork, Cork North Division",106,2264.15
+2020,"Co Donegal, Donegal Division",95,1263.16
+2020,"Co Dublin, D.M.R. Eastern Division",1150,104.35
+2020,"Co Kerry, Cork West Division",34,3529.41
+2020,"Co Louth, Louth Division",205,585.37
+2020,"Co Mayo, Mayo Division",34,3529.41
+2020,"Co Tipperary, Tipperary Division",67,1791.04
+2020,"Co Waterford, Waterford Division",71,3380.28
+2020,"Co. Cork, Cork West Division",55,2181.82
+2020,"Co. Kerry, Kerry Division",43,2790.7
+2020,"Co. Offaly, Laois/Offaly Division",44,2727.27
+2020,"Co. Tipperary, Tipperary Division",11,10909.09
+2020,Cork City Division,9862,182.52
+2020,Cork North Division,3850,716.88
+2020,Cork West Division,2127,1692.52
+2020,D.M.R. Eastern Division,6367,75.39
+2020,D.M.R. North Central Division,15248,31.48
+2020,D.M.R. Northern Division,15368,101.51
+2020,D.M.R. South Central Division,14359,41.79
+2020,D.M.R. Southern Division,11229,64.12
+2020,D.M.R. Western Division,18254,52.59
+2020,Donegal Division,4037,1070.1
+2020,Galway Division,7002,788.35
+2020,Kerry Division,4152,693.64
+2020,Kildare Division,5970,301.51
+2020,Kilkenny/Carlow Division,4231,709.05
+2020,Laois/Offaly Division,4949,581.94
+2020,Limerick Division,9133,381.04
+2020,Louth Division,5988,240.48
+2020,Mayo Division,2445,1374.23
+2020,Meath Division,5263,364.81
+2020,Roscommon/Longford Division,2639,1000.38
+2020,Sligo/Leitrim Division,2726,792.37
+2020,Tipperary Division,4570,919.04
+2020,Waterford Division,4991,408.74
+2020,Westmeath Division,2986,522.44
+2020,Wexford Division,3862,683.58
+2020,Wicklow Division,4505,452.83
+2021,Cavan/Monaghan Division,4542,660.5
+2021,Clare Division,2932,695.77
+2021,"Co Cork, Cork City Division",431,278.42
+2021,"Co Cork, Cork North Division",67,3582.09
+2021,"Co Donegal, Donegal Division",73,1643.84
+2021,"Co Dublin, D.M.R. Eastern Division",1147,104.62
+2021,"Co Kerry, Cork West Division",30,4000.0
+2021,"Co Louth, Louth Division",265,452.83
+2021,"Co Mayo, Mayo Division",37,3243.24
+2021,"Co Tipperary, Tipperary Division",50,2400.0
+2021,"Co Waterford, Waterford Division",66,3636.36
+2021,"Co. Cork, Cork West Division",54,2222.22
+2021,"Co. Kerry, Kerry Division",43,2790.7
+2021,"Co. Offaly, Laois/Offaly Division",36,3333.33
+2021,"Co. Tipperary, Tipperary Division",10,12000.0
+2021,Cork City Division,10101,178.2
+2021,Cork North Division,4115,670.72
+2021,Cork West Division,2265,1589.4
+2021,D.M.R. Eastern Division,5769,83.2
+2021,D.M.R. North Central Division,15055,31.88
+2021,D.M.R. Northern Division,14470,107.81
+2021,D.M.R. South Central Division,13408,44.75
+2021,D.M.R. Southern Division,10379,69.37
+2021,D.M.R. Western Division,17662,54.35
+2021,Donegal Division,4239,1019.11
+2021,Galway Division,7517,734.34
+2021,Kerry Division,4300,669.77
+2021,Kildare Division,6760,266.27
+2021,Kilkenny/Carlow Division,4169,719.6
+2021,Laois/Offaly Division,4927,584.53
+2021,Limerick Division,9761,356.52
+2021,Louth Division,5808,247.93
+2021,Mayo Division,2853,1177.71
+2021,Meath Division,4942,388.51
+2021,Roscommon/Longford Division,2784,948.28
+2021,Sligo/Leitrim Division,2658,812.64
+2021,Tipperary Division,4828,869.93
+2021,Waterford Division,5467,373.15
+2021,Westmeath Division,3225,483.72
+2021,Wexford Division,4292,615.1
+2021,Wicklow Division,4256,479.32
+2022,Cavan/Monaghan Division,4790,626.3
+2022,Clare Division,2993,681.59
+2022,"Co Cork, Cork City Division",491,244.4
+2022,"Co Cork, Cork North Division",88,2727.27
+2022,"Co Donegal, Donegal Division",90,1333.33
+2022,"Co Dublin, D.M.R. Eastern Division",1142,105.08
+2022,"Co Kerry, Cork West Division",28,4285.71
+2022,"Co Louth, Louth Division",238,504.2
+2022,"Co Mayo, Mayo Division",33,3636.36
+2022,"Co Tipperary, Tipperary Division",62,1935.48
+2022,"Co Waterford, Waterford Division",55,4363.64
+2022,"Co. Cork, Cork West Division",81,1481.48
+2022,"Co. Kerry, Kerry Division",32,3750.0
+2022,"Co. Offaly, Laois/Offaly Division",41,2926.83
+2022,"Co. Tipperary, Tipperary Division",19,6315.79
+2022,Cork City Division,11692,153.95
+2022,Cork North Division,5130,538.01
+2022,Cork West Division,2197,1638.6
+2022,D.M.R. Eastern Division,6263,76.64
+2022,D.M.R. North Central Division,20017,23.98
+2022,D.M.R. Northern Division,15770,98.92
+2022,D.M.R. South Central Division,17119,35.05
+2022,D.M.R. Southern Division,11993,60.04
+2022,D.M.R. Western Division,19462,49.33
+2022,Donegal Division,4505,958.93
+2022,Galway Division,8082,683.0
+2022,Kerry Division,5063,568.83
+2022,Kildare Division,8094,222.39
+2022,Kilkenny/Carlow Division,4509,665.34
+2022,Laois/Offaly Division,6134,469.51
+2022,Limerick Division,9802,355.03
+2022,Louth Division,6034,238.65
+2022,Mayo Division,2817,1192.76
+2022,Meath Division,5337,359.75
+2022,Roscommon/Longford Division,2791,945.9
+2022,Sligo/Leitrim Division,2836,761.64
+2022,Tipperary Division,5084,826.12
+2022,Waterford Division,6230,327.45
+2022,Westmeath Division,4035,386.62
+2022,Wexford Division,4782,552.07
+2022,Wicklow Division,4075,500.61
+2023,Cavan/Monaghan Division,4250,647.06
+2023,Clare Division,3239,577.34
+2023,"Co Cork, Cork City Division",519,211.95
+2023,"Co Cork, Cork North Division",95,2315.79
+2023,"Co Donegal, Donegal Division",93,1182.8
+2023,"Co Dublin, D.M.R. Eastern Division",949,115.91
+2023,"Co Kerry, Cork West Division",41,2682.93
+2023,"Co Louth, Louth Division",249,441.77
+2023,"Co Mayo, Mayo Division",31,3548.39
+2023,"Co Tipperary, Tipperary Division",78,1410.26
+2023,"Co Waterford, Waterford Division",58,3793.1
+2023,"Co. Cork, Cork West Division",77,1428.57
+2023,"Co. Kerry, Kerry Division",20,5500.0
+2023,"Co. Offaly, Laois/Offaly Division",37,2972.97
+2023,"Co. Tipperary, Tipperary Division",12,9166.67
+2023,Cork City Division,10837,152.26
+2023,Cork North Division,4599,550.12
+2023,Cork West Division,2018,1635.28
+2023,D.M.R. Eastern Division,5907,74.49
+2023,D.M.R. North Central Division,21313,20.64
+2023,D.M.R. Northern Division,15778,90.63
+2023,D.M.R. South Central Division,16991,32.37
+2023,D.M.R. Southern Division,10877,60.68
+2023,D.M.R. Western Division,17295,50.88
+2023,Donegal Division,4413,897.35
+2023,Galway Division,8144,621.32
+2023,Kerry Division,4845,544.89
+2023,Kildare Division,7956,207.39
+2023,Kilkenny/Carlow Division,4453,617.56
+2023,Laois/Offaly Division,5618,469.92
+2023,Limerick Division,9953,320.51
+2023,Louth Division,5905,223.54
+2023,Mayo Division,2585,1191.49
+2023,Meath Division,5679,309.91
+2023,Roscommon/Longford Division,2871,842.91
+2023,Sligo/Leitrim Division,2664,743.24
+2023,Tipperary Division,5250,733.33
+2023,Waterford Division,6076,307.77
+2023,Westmeath Division,4287,333.57
+2023,Wexford Division,4689,516.1
+2023,Wicklow Division,3969,471.15
