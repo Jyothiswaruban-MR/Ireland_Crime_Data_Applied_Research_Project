@@ -26,3 +26,8 @@ Thumbs.db
 # Large or temporary data (optional)
 # data/raw/
 # *.csv
+
+# Large / intermediate data
+*.feather
+data/*.csv
+data/agg_*.csv
