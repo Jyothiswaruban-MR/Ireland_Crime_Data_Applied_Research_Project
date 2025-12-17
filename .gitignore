@@ -40,3 +40,4 @@ models/
 
 data/cleaned/recorded_crime_cleaned.csv
 data/cleaned/victims_personal_crime_cleaned.csv
+test.py 
