@@ -13,6 +13,24 @@ datasets = {
     # "detection_rates": "detection_rates_cleaned.csv",
     # "victims_personal_crime": "victims_personal_crime_cleaned.csv"
 }
+df = pd.read_csv("data/cleaned/recorded_crime_enriched.csv")
+
+dmr_2021 = df[
+    (df["region"] == "Dublin Metropolitan Region") &
+    (df["year"] == 2021)
+]
+
+# Records with missing division
+missing_div = dmr_2021[dmr_2021["division"].isna()]
+uni = dmr_2021["offence"].unique()
+
+
+print(uni)
+print("Sample rows with missing division:")
+print(missing_div.head(10))
+
+print("\nTotal missing-division incidents:")
+print(missing_div["incidents"].sum())
 
 
 def inspect_dataset(file_path, name):
