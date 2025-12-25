@@ -1,0 +1,49 @@
+region,year,total_incidents,level_code,prediction
+Dublin Metropolitan Region,2018,92347,0,
+Dublin Metropolitan Region,2019,99110,0,
+Dublin Metropolitan Region,2020,81975,0,
+Dublin Metropolitan Region,2021,77890,0,
+Dublin Metropolitan Region,2022,91766,0,80505.68666666666
+Dublin Metropolitan Region,2023,89110,0,80505.68666666666
+Eastern,2018,6468,1,
+Eastern,2019,6796,1,
+Eastern,2020,6193,1,
+Eastern,2021,6073,1,
+Eastern,2022,6272,1,7739.696666666667
+Eastern,2023,6154,1,7739.696666666667
+Eastern Region,2018,32787,2,
+Eastern Region,2019,34805,2,
+Eastern Region,2020,27579,2,
+Eastern Region,2021,28438,2,
+Eastern Region,2022,32498,2,26090.303333333333
+Eastern Region,2023,32235,2,26090.303333333333
+North Western Region,2018,10485,3,
+North Western Region,2019,11298,3,
+North Western Region,2020,9337,3,
+North Western Region,2021,9860,3,
+North Western Region,2022,10281,3,10058.106666666667
+North Western Region,2023,9786,3,10058.106666666667
+Northern,2018,5218,4,
+Northern,2019,5377,4,
+Northern,2020,4359,4,
+Northern,2021,4542,4,
+Northern,2022,4790,4,4817.286666666667
+Northern,2023,4250,4,4817.286666666667
+Southern,2018,8716,5,
+Southern,2019,8361,5,
+Southern,2020,7161,5,
+Southern,2021,7101,5,
+Southern,2022,7502,5,7160.516666666666
+Southern,2023,7692,5,7160.516666666666
+Southern Region,2018,45915,6,
+Southern Region,2019,45309,6,
+Southern Region,2020,39528,6,
+Southern Region,2021,41588,6,
+Southern Region,2022,46054,6,39997.95
+Southern Region,2023,44478,6,39997.95
+Western,2018,10431,7,
+Western,2019,11258,7,
+Western,2020,9641,7,
+Western,2021,10301,7,
+Western,2022,10873,7,11275.536666666667
+Western,2023,11015,7,11275.536666666667
