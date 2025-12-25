@@ -403,7 +403,7 @@ if page == "Overview":
 # PAGE: Recorded Crime Explorer
 # =========================
 elif page == "Recorded Crime Explorer":
-    st.markdown("## 📊 Recorded Crime Explorer")
+    st.markdown("## Recorded Crime Explorer")
 
     st.markdown("### Crime Trend (Filtered Scope)")
 
@@ -467,7 +467,7 @@ elif page == "Recorded Crime Explorer":
 # PAGE: Region & Division Insights
 # =========================
 elif page == "Region & Division Insights":
-    st.markdown("## 🗺️ Region & Division Insights")
+    st.markdown("##  Region & Division Insights")
 
     st.markdown("### Region Trends (Filtered Scope)")
 
@@ -536,7 +536,7 @@ elif page == "Region & Division Insights":
 # PAGE: Offence Analysis
 # =========================
 elif page == "Offence Analysis":
-    st.markdown("## ⚖️ Offence Analysis")
+    st.markdown("##  Offence Analysis")
 
     st.markdown("### Offence Composition (Filtered Scope)")
 
@@ -580,7 +580,7 @@ elif page == "Offence Analysis":
 # PAGE: Forecasting Results
 # =========================
 elif page == "Forecasting Results":
-    st.markdown("## 🔮 Forecasting Results")
+    st.markdown("##  Forecasting Results")
 
     st.markdown(
         "Forecasts were generated using a Random Forest Regressor trained on "
