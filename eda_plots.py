@@ -7,7 +7,6 @@ BASE_DIR = Path(__file__).resolve().parent
 CLEAN_DIR = BASE_DIR / "data" / "cleaned"
 
 # -----------------------------
-# Figure 4.4
 # Distribution of Recorded Crime Types Across Ireland
 # -----------------------------
 
@@ -20,7 +19,7 @@ crime_by_type = (
       .sort_values("total_incidents", ascending=False)
 )
 
-# Convert to millions
+# Converting to millions
 crime_by_type["total_incidents"] = crime_by_type["total_incidents"] / 1_000_000
 
 plt.figure(figsize=(14, 7))  
@@ -48,7 +47,6 @@ plt.show()
 
 
 # -----------------------------
-# Figure 4.5
 # Trend Analysis of Recorded Crimes over Time
 # -----------------------------
 
@@ -65,7 +63,6 @@ plt.savefig("Figure_4_5_Crime_Trends_Over_Time.png", dpi=300)
 plt.show()
 
 # -----------------------------
-# Figure 4.6
 # Regional Comparison of Crime Rates
 # -----------------------------
 
@@ -77,7 +74,6 @@ region_totals = (
     .sort_values("total_incidents", ascending=False)
 )
 
-# IMPORTANT: scale BEFORE plotting to avoid scientific notation
 region_totals["total_incidents"] = region_totals["total_incidents"] / 1_000_000
 
 plt.figure(figsize=(9, 5))

@@ -13,7 +13,7 @@ def build_minimal_analytical_dataset() -> pd.DataFrame:
 
     df = load_recorded_crime(cleaned=True).copy()
 
-    # Final standard columns expected down the pipeline:
+    # Final standardization columns expected down the pipeline are:
     #   year, garda_station, offence, incidents
 
     df = df.sort_values(["year", "garda_station", "offence"]).reset_index(drop=True)

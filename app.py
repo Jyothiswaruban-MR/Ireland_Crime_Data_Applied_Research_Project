@@ -3,9 +3,7 @@ import pandas as pd
 import altair as alt
 from pathlib import Path
 
-# =========================
-# Paths & basic config
-# =========================
+# Paths & basic configurations
 BASE_DIR = Path(__file__).resolve().parent
 CLEAN_DIR = BASE_DIR / "data" / "cleaned"
 
@@ -13,11 +11,9 @@ REC_ENRICHED = CLEAN_DIR / "recorded_crime_enriched.csv"
 DET_SEX_PATH = CLEAN_DIR / "detected_crime_by_sex_cleaned.csv"
 DET_RATE_PATH = CLEAN_DIR / "detection_rates_cleaned.csv"
 
-# Existing (test years only)
 FORECAST_REGION_PATH = CLEAN_DIR / "forecast_region_2022_2023.csv"
 FORECAST_DIV_PATH = CLEAN_DIR / "forecast_division_2022_2023.csv"
 
-# Plot-ready full timeline
 FORECAST_REGION_PLOT_PATH = CLEAN_DIR / "forecast_region_plot_2018_2023.csv"
 FORECAST_DIV_PLOT_PATH = CLEAN_DIR / "forecast_division_plot_2018_2023.csv"
 
@@ -30,9 +26,6 @@ AGG_YEARLY = CLEAN_DIR / "agg_yearly.csv"
 st.set_page_config(page_title="Ireland Crime Dashboard", layout="wide")
 alt.themes.enable("dark")
 
-# =========================
-# Global chart label helpers
-# =========================
 def pretty_label(name: str) -> str:
     """snake_case -> Title Case (e.g., total_incidents -> Total Incidents)"""
     return name.replace("_", " ").strip().title()
@@ -58,9 +51,6 @@ def tt(field: str, *, fmt: str | None = None, title: str | None = None):
         return alt.Tooltip(f"{field}:Q", format=fmt, title=title or pretty_label(field))
     return alt.Tooltip(field, title=title or pretty_label(field))
 
-# =========================
-# Loaders
-# =========================
 @st.cache_data
 def load_recorded() -> pd.DataFrame:
     df = pd.read_csv(REC_ENRICHED)
@@ -68,7 +58,7 @@ def load_recorded() -> pd.DataFrame:
     df["year"] = pd.to_numeric(df["year"], errors="coerce").astype("Int64")
     df["incidents"] = pd.to_numeric(df["incidents"], errors="coerce").fillna(0).astype(int)
 
-    # Normalise region names
+    # Normalising the region names
     if "region" in df.columns:
         region_map = {
             "Southern": "Southern Region",
@@ -90,10 +80,6 @@ def load_optional(path: Path) -> pd.DataFrame | None:
         return None
     return pd.read_csv(path)
 
-
-# =========================
-# Load data
-# =========================
 rec_df = load_recorded()
 
 det_sex_df = load_optional(DET_SEX_PATH)
@@ -118,9 +104,6 @@ region_options = ["All regions"] + sorted(rec_df["region"].dropna().unique())
 division_options_all = ["All divisions"] + sorted(rec_df["division"].dropna().unique())
 offence_options = ["All offences"] + sorted(rec_df["offence"].dropna().unique())
 
-# =========================
-# Session state defaults
-# =========================
 if "page" not in st.session_state:
     st.session_state.page = "Overview"
 
@@ -182,9 +165,7 @@ if st.sidebar.button(" Reset Dashboard"):
 
 st.sidebar.caption("Filters apply across analytical sections.")
 
-# =========================
-# Apply global filters
-# =========================
+# Applying global filters
 def apply_filters(df: pd.DataFrame) -> pd.DataFrame:
     f = df[(df["year"] >= year_range[0]) & (df["year"] <= year_range[1])].copy()
 
@@ -199,9 +180,7 @@ def apply_filters(df: pd.DataFrame) -> pd.DataFrame:
 
 filtered_rec = apply_filters(rec_df)
 
-# =========================
-# Insight generator
-# =========================
+# Insights generator
 def generate_insights(df_full: pd.DataFrame, year: int, offence: str, region: str, division: str) -> list[str]:
     insights: list[str] = []
 
@@ -269,9 +248,7 @@ def generate_insights(df_full: pd.DataFrame, year: int, offence: str, region: st
 
     return insights
 
-# =========================
-# Forecast chart builder
-# =========================
+# Forecasting chart builder
 def build_forecast_chart(
     df: pd.DataFrame,
     year_col: str,
@@ -311,9 +288,7 @@ def build_forecast_chart(
     )
     return chart
 
-# =========================
 # PAGE: Overview
-# =========================
 if page == "Overview":
     st.markdown("## 🇮reland Crime Stats Overview")
 
@@ -399,9 +374,7 @@ if page == "Overview":
     for i, txt in enumerate(insights, 1):
         st.markdown(f"**{i}.** {txt}")
 
-# =========================
 # PAGE: Recorded Crime Explorer
-# =========================
 elif page == "Recorded Crime Explorer":
     st.markdown("## Recorded Crime Explorer")
 
@@ -463,9 +436,7 @@ elif page == "Recorded Crime Explorer":
     for i, txt in enumerate(insights, 1):
         st.markdown(f"**{i}.** {txt}")
 
-# =========================
 # PAGE: Region & Division Insights
-# =========================
 elif page == "Region & Division Insights":
     st.markdown("##  Region & Division Insights")
 
@@ -532,9 +503,7 @@ elif page == "Region & Division Insights":
     for i, txt in enumerate(insights, 1):
         st.markdown(f"**{i}.** {txt}")
 
-# =========================
 # PAGE: Offence Analysis
-# =========================
 elif page == "Offence Analysis":
     st.markdown("##  Offence Analysis")
 
@@ -576,9 +545,7 @@ elif page == "Offence Analysis":
     for i, txt in enumerate(insights, 1):
         st.markdown(f"**{i}.** {txt}")
 
-# =========================
 # PAGE: Forecasting Results
-# =========================
 elif page == "Forecasting Results":
     st.markdown("##  Forecasting Results")
 
@@ -684,9 +651,7 @@ elif page == "Forecasting Results":
         else:
             st.info("Division-level forecast data not available.")
 
-# =========================
-# Footer
-# =========================
+# Footers
 st.markdown("---")
 st.markdown(
     """

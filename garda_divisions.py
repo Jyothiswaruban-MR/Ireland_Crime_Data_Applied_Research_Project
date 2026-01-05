@@ -8,9 +8,6 @@ DIV_CLEAN_PATH = BASE_DIR / "division_clean_map.csv"
 DIV_REGION_PATH = BASE_DIR / "division_region_mapping.csv"
 
 
-# -------------------------
-# Load division → clean version
-# -------------------------
 def load_division_clean_map() -> pd.DataFrame:
     print("\n[DEBUG] Loading division_clean_map.csv")
     print("→ File exists:", DIV_CLEAN_PATH.exists())
@@ -24,9 +21,6 @@ def load_division_clean_map() -> pd.DataFrame:
     return df
 
 
-# -------------------------
-# Load division → region map
-# -------------------------
 def load_division_region_map() -> pd.DataFrame:
     print("\n[DEBUG] Loading division_region_mapping.csv")
     print("→ File exists:", DIV_REGION_PATH.exists())
@@ -40,9 +34,6 @@ def load_division_region_map() -> pd.DataFrame:
     return df
 
 
-# -------------------------
-# Load station → division map (clean + region)
-# -------------------------
 def load_station_mapping() -> pd.DataFrame:
     print("\n[DEBUG] Loading station_division_mapping.csv")
     print("→ File exists:", MAP_PATH.exists())
@@ -51,18 +42,16 @@ def load_station_mapping() -> pd.DataFrame:
     df = pd.read_csv(MAP_PATH)
     print("→ Loaded rows:", len(df))
 
-    # Drop header-like junk if present
+    # Dropping header junk if present
     df = df[df["raw"] != "garda_station"].copy()
     print("→ After removing header-like row:", len(df))
 
-    # Standardize columns
+    # Standardizing columns
     df["station_code"] = df["station_code"].astype(str).str.replace(".0", "", regex=False)
     df["station_name"] = df["station_name"].astype(str).str.strip()
     df["division"] = df["division"].astype(str).str.strip()
 
-    # -------------------------
-    # CLEAN DIVISION NAMES
-    # -------------------------
+   
     clean_map = load_division_clean_map()
 
     df = df.merge(clean_map, left_on="division", right_on="raw", how="left")
@@ -74,10 +63,7 @@ def load_station_mapping() -> pd.DataFrame:
 
     df["division"] = df["division"].astype(str).str.strip()
 
-    # -------------------------
-    # REGION MAPPING
-    # -------------------------
-    div_region = load_division_region_map()
+      div_region = load_division_region_map()
 
     df = df.merge(div_region, on="division", how="left")
     print("→ After merging region map:", len(df))
@@ -93,9 +79,6 @@ def load_station_mapping() -> pd.DataFrame:
     return df
 
 
-# -------------------------
-# Attach to cleaned crime data
-# -------------------------
 def attach_geography(crime_df: pd.DataFrame) -> pd.DataFrame:
     print("\n[DEBUG] Attaching geography columns…")
 

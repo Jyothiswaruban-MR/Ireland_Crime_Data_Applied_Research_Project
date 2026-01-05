@@ -27,10 +27,9 @@ def clean_recorded_crime():
     df_final.to_csv(basic_out, index=False)
     print(f"Saved cleaned Recorded Crime to {basic_out} (rows={len(df_final)})")
 
-    # 🔹 Enrich with geography
     enriched = attach_geography(df_final)
 
-    # 🔹 NEW: standardise region names (IMPORTANT)
+    # standardising the region
     REGION_MAP = {
         "Eastern": "Eastern Region",
         "Eastern Region": "Eastern Region",

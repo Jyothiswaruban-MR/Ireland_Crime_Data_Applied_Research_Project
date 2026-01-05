@@ -6,14 +6,14 @@ df = pd.read_csv("station_list.txt", header=None, names=["raw"])
 def parse_station(row):
     text = row["raw"]
 
-    # Extract station code (first 5 digits)
+    # Extracting station code (first 5 digits)
     station_code = re.match(r"(\d{5})", text)
     station_code = station_code.group(1) if station_code else None
 
-    # Remove station code
+    # Removing station code
     cleaned = re.sub(r"^\d{5}\s*", "", text)
 
-    # Split into station name and division
+    # Splitting into station name and division
     if "," in cleaned:
         station_name, division_part = cleaned.split(",", 1)
     else:
