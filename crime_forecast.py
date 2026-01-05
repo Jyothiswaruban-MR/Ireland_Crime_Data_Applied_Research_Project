@@ -9,6 +9,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 BASE_DIR = Path(__file__).resolve().parent
 CLEAN_DIR = BASE_DIR / "data" / "cleaned"
 DATA_PATH = CLEAN_DIR / "recorded_crime_enriched.csv"
+results = []
 
 
 def load_enriched() -> pd.DataFrame:
@@ -29,16 +30,25 @@ def make_level_dataset(df: pd.DataFrame, level: str) -> pd.DataFrame:
     return grouped
 
 
-def plot_forecast(plot_df: pd.DataFrame, level: str) -> None:
+def plot_forecast(plot_df: pd.DataFrame, level: str, top_n: int = 5) -> None:
     """
-    Show Actual vs Predicted line plots for ALL levels.
-    Predictions only exist for test years (2022–2023).
+    Plot Actual vs Predicted line plots for TOP N levels only,
+    ranked by total crime volume.
     """
-    levels = sorted(plot_df[level].dropna().unique())
 
-    print(f"Plotting {len(levels)} {level}(s)...")
+    # Rank levels by total incidents
+    level_totals = (
+        plot_df.groupby(level)["total_incidents"]
+        .sum()
+        .sort_values(ascending=False)
+        .head(top_n)
+    )
 
-    for lvl in levels:
+    selected_levels = level_totals.index.tolist()
+
+    print(f"Plotting TOP {top_n} {level}(s): {selected_levels}")
+
+    for lvl in selected_levels:
         sub = plot_df[plot_df[level] == lvl].sort_values("year")
 
         plt.figure(figsize=(8, 4))
@@ -48,7 +58,13 @@ def plot_forecast(plot_df: pd.DataFrame, level: str) -> None:
         pred = pd.to_numeric(sub["prediction"], errors="coerce")
         mask = pred.notna()
         if mask.any():
-            plt.plot(sub.loc[mask, "year"], pred.loc[mask], marker="o", label="Predicted")
+            plt.plot(
+                sub.loc[mask, "year"],
+                pred.loc[mask],
+                marker="o",
+                linestyle="--",
+                label="Predicted"
+            )
 
         plt.title(f"{level.title()} Forecast: {lvl} (2018–2023)")
         plt.xlabel("Year")
@@ -57,7 +73,7 @@ def plot_forecast(plot_df: pd.DataFrame, level: str) -> None:
         plt.grid(alpha=0.3)
         plt.legend()
         plt.tight_layout()
-        plt.show()  # blocking (close window to move to next)
+        plt.show()
 
 
 def train_and_evaluate_level(
@@ -67,7 +83,8 @@ def train_and_evaluate_level(
     show_plots: bool = True,
 ) -> None:
     """
-    Train RandomForestRegressor and optionally show plots for ALL levels.
+    Train RandomForestRegressor and optionally show plots
+    for TOP N levels only.
     """
     data = make_level_dataset(df, level)
 
@@ -109,6 +126,13 @@ def train_and_evaluate_level(
     print(f"MAE  : {mae:.2f}")
     print(f"RMSE : {rmse:.2f}")
 
+    results.append({
+        "Level": level.title(),
+        "MAE": round(mae, 2),
+        "RMSE": round(rmse, 2)  
+    })
+
+
     # Save test predictions
     out = test.copy()
     out["prediction"] = y_pred
@@ -125,15 +149,24 @@ def train_and_evaluate_level(
 
     print(f"Saved forecast files for level '{level}'.")
 
-    # Show ALL plots
+    # Show TOP N plots only
     if show_plots:
-        plot_forecast(plot_df, level)
+        plot_forecast(plot_df, level, top_n=5)
 
 
 def run_all(train_end_year: int = 2021, show_plots: bool = True) -> None:
     df = load_enriched()
     train_and_evaluate_level(df, "region", train_end_year, show_plots)
     train_and_evaluate_level(df, "division", train_end_year, show_plots)
+
+    # Save performance table
+    perf_df = pd.DataFrame(results)
+    out_path = CLEAN_DIR / "forecast_model_performance_summary.csv"
+    perf_df.to_csv(out_path, index=False)
+
+    print("\nSaved forecasting performance summary:")
+    print(perf_df)
+
 
 
 if __name__ == "__main__":

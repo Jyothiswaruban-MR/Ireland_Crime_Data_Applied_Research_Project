@@ -1,6 +1,6 @@
 import pandas as pd
 from pathlib import Path
-from garda_divisions import attach_geography  # ⬅️ NEW
+from garda_divisions import attach_geography
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
@@ -27,15 +27,31 @@ def clean_recorded_crime():
     df_final.to_csv(basic_out, index=False)
     print(f"Saved cleaned Recorded Crime to {basic_out} (rows={len(df_final)})")
 
-    # 🔹 NEW: enriched with station_code, station_name, division, region, county
+    # 🔹 Enrich with geography
     enriched = attach_geography(df_final)
+
+    # 🔹 NEW: standardise region names (IMPORTANT)
+    REGION_MAP = {
+        "Eastern": "Eastern Region",
+        "Eastern Region": "Eastern Region",
+        "Southern": "Southern Region",
+        "Southern Region": "Southern Region",
+        "Western": "Western Region",
+        "Western Region": "Western Region",
+        "Northern": "Northern Region",
+        "Northern Region": "Northern Region",
+        "North Western": "North Western Region",
+        "North Western Region": "North Western Region",
+        "Dublin Metropolitan Region": "Dublin Metropolitan Region"
+    }
+
+    enriched["region"] = enriched["region"].map(REGION_MAP).fillna(enriched["region"])
+
     enriched_out = CLEAN_DIR / "recorded_crime_enriched.csv"
     enriched.to_csv(enriched_out, index=False)
     print(f"Saved ENRICHED Recorded Crime to {enriched_out} (rows={len(enriched)})")
-
 
     return df_final
 
 if __name__ == "__main__":
     clean_recorded_crime()
-

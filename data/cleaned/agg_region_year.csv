@@ -21,50 +21,28 @@ Dublin Metropolitan Region,2021,77890
 Dublin Metropolitan Region,2022,91766
 Dublin Metropolitan Region,2023,89110
 Dublin Metropolitan Region,2024,92093
-Eastern,2003,6336
-Eastern,2004,6110
-Eastern,2005,6922
-Eastern,2006,7262
-Eastern,2007,8473
-Eastern,2008,9269
-Eastern,2009,8763
-Eastern,2010,8413
-Eastern,2011,7325
-Eastern,2012,7296
-Eastern,2013,6539
-Eastern,2014,6467
-Eastern,2015,6588
-Eastern,2016,5624
-Eastern,2017,6076
-Eastern,2018,6468
-Eastern,2019,6796
-Eastern,2020,6193
-Eastern,2021,6073
-Eastern,2022,6272
-Eastern,2023,6154
-Eastern,2024,6801
-Eastern Region,2003,32765
-Eastern Region,2004,33485
-Eastern Region,2005,38360
-Eastern Region,2006,41036
-Eastern Region,2007,44903
-Eastern Region,2008,46221
-Eastern Region,2009,45650
-Eastern Region,2010,42837
-Eastern Region,2011,42513
-Eastern Region,2012,40108
-Eastern Region,2013,37329
-Eastern Region,2014,36150
-Eastern Region,2015,34740
-Eastern Region,2016,30834
-Eastern Region,2017,34248
-Eastern Region,2018,32787
-Eastern Region,2019,34805
-Eastern Region,2020,27579
-Eastern Region,2021,28438
-Eastern Region,2022,32498
-Eastern Region,2023,32235
-Eastern Region,2024,32904
+Eastern Region,2003,39101
+Eastern Region,2004,39595
+Eastern Region,2005,45282
+Eastern Region,2006,48298
+Eastern Region,2007,53376
+Eastern Region,2008,55490
+Eastern Region,2009,54413
+Eastern Region,2010,51250
+Eastern Region,2011,49838
+Eastern Region,2012,47404
+Eastern Region,2013,43868
+Eastern Region,2014,42617
+Eastern Region,2015,41328
+Eastern Region,2016,36458
+Eastern Region,2017,40324
+Eastern Region,2018,39255
+Eastern Region,2019,41601
+Eastern Region,2020,33772
+Eastern Region,2021,34511
+Eastern Region,2022,38770
+Eastern Region,2023,38389
+Eastern Region,2024,39705
 North Western Region,2003,15442
 North Western Region,2004,14074
 North Western Region,2005,16048
@@ -87,91 +65,69 @@ North Western Region,2021,9860
 North Western Region,2022,10281
 North Western Region,2023,9786
 North Western Region,2024,9706
-Northern,2003,5162
-Northern,2004,5612
-Northern,2005,6287
-Northern,2006,6632
-Northern,2007,7126
-Northern,2008,6648
-Northern,2009,6026
-Northern,2010,6025
-Northern,2011,5686
-Northern,2012,5176
-Northern,2013,4319
-Northern,2014,4273
-Northern,2015,4416
-Northern,2016,4385
-Northern,2017,4925
-Northern,2018,5218
-Northern,2019,5377
-Northern,2020,4359
-Northern,2021,4542
-Northern,2022,4790
-Northern,2023,4250
-Northern,2024,4014
-Southern,2003,9393
-Southern,2004,9581
-Southern,2005,10468
-Southern,2006,12146
-Southern,2007,13244
-Southern,2008,13774
-Southern,2009,13933
-Southern,2010,13623
-Southern,2011,12103
-Southern,2012,11037
-Southern,2013,10544
-Southern,2014,10069
-Southern,2015,9570
-Southern,2016,8844
-Southern,2017,8796
-Southern,2018,8716
-Southern,2019,8361
-Southern,2020,7161
-Southern,2021,7101
-Southern,2022,7502
-Southern,2023,7692
-Southern,2024,7340
-Southern Region,2003,51886
-Southern Region,2004,52707
-Southern Region,2005,59750
-Southern Region,2006,65267
-Southern Region,2007,66896
-Southern Region,2008,68735
-Southern Region,2009,64211
-Southern Region,2010,60979
-Southern Region,2011,57257
-Southern Region,2012,52801
-Southern Region,2013,49722
-Southern Region,2014,47614
-Southern Region,2015,47710
-Southern Region,2016,41054
-Southern Region,2017,44128
-Southern Region,2018,45915
-Southern Region,2019,45309
-Southern Region,2020,39528
-Southern Region,2021,41588
-Southern Region,2022,46054
-Southern Region,2023,44478
-Southern Region,2024,44086
-Western,2003,12016
-Western,2004,11595
-Western,2005,13110
-Western,2006,15007
-Western,2007,16201
-Western,2008,16813
-Western,2009,16434
-Western,2010,14971
-Western,2011,13130
-Western,2012,12937
-Western,2013,11760
-Western,2014,11612
-Western,2015,11481
-Western,2016,10218
-Western,2017,11264
-Western,2018,10431
-Western,2019,11258
-Western,2020,9641
-Western,2021,10301
-Western,2022,10873
-Western,2023,11015
-Western,2024,10381
+Northern Region,2003,5162
+Northern Region,2004,5612
+Northern Region,2005,6287
+Northern Region,2006,6632
+Northern Region,2007,7126
+Northern Region,2008,6648
+Northern Region,2009,6026
+Northern Region,2010,6025
+Northern Region,2011,5686
+Northern Region,2012,5176
+Northern Region,2013,4319
+Northern Region,2014,4273
+Northern Region,2015,4416
+Northern Region,2016,4385
+Northern Region,2017,4925
+Northern Region,2018,5218
+Northern Region,2019,5377
+Northern Region,2020,4359
+Northern Region,2021,4542
+Northern Region,2022,4790
+Northern Region,2023,4250
+Northern Region,2024,4014
+Southern Region,2003,61279
+Southern Region,2004,62288
+Southern Region,2005,70218
+Southern Region,2006,77413
+Southern Region,2007,80140
+Southern Region,2008,82509
+Southern Region,2009,78144
+Southern Region,2010,74602
+Southern Region,2011,69360
+Southern Region,2012,63838
+Southern Region,2013,60266
+Southern Region,2014,57683
+Southern Region,2015,57280
+Southern Region,2016,49898
+Southern Region,2017,52924
+Southern Region,2018,54631
+Southern Region,2019,53670
+Southern Region,2020,46689
+Southern Region,2021,48689
+Southern Region,2022,53556
+Southern Region,2023,52170
+Southern Region,2024,51426
+Western Region,2003,12016
+Western Region,2004,11595
+Western Region,2005,13110
+Western Region,2006,15007
+Western Region,2007,16201
+Western Region,2008,16813
+Western Region,2009,16434
+Western Region,2010,14971
+Western Region,2011,13130
+Western Region,2012,12937
+Western Region,2013,11760
+Western Region,2014,11612
+Western Region,2015,11481
+Western Region,2016,10218
+Western Region,2017,11264
+Western Region,2018,10431
+Western Region,2019,11258
+Western Region,2020,9641
+Western Region,2021,10301
+Western Region,2022,10873
+Western Region,2023,11015
+Western Region,2024,10381
