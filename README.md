@@ -1,96 +1,21 @@
-Ireland Crime Data – Applied Research Project
+Ireland Crime Data – Applied Research Project is an interactive crime analytics dashboard developed using Python and Streamlit as part of an MSc Applied Research Project at Dublin Business School (DBS) within the Computing and Information Systems discipline. The project investigates long-term trends in recorded crime in Ireland using publicly available, anonymised data from the Central Statistics Office (CSO), with the primary aim of improving accessibility, interpretability, and exploratory analysis of crime statistics for non-technical and policy-oriented users. Rather than presenting static charts, the dashboard enables interactive exploration of crime data, including analysis of national trends over time, comparison across Garda regions and divisions, examination of offence categories and Garda station-level patterns, application of global filters for year range, region, division, and offence type, and the presentation of automatically generated narrative summaries to support interpretation. To ensure reproducibility while keeping the repository lightweight, raw CSO datasets are retrieved programmatically via the CSO Open Data API and are not stored within the repository, with only the final cleaned and aggregated analytical datasets retained locally for dashboard execution. The data processing workflow consists of programmatic data ingestion, cleaning and standardisation of key fields such as years, offence labels, and regional identifiers, enrichment with Garda region and division metadata, aggregation by year, region, division, offence type, and Garda station, and optional generation of illustrative short-term crime forecasts based solely on historical trends. The analytical pipeline is executed by first running the data ingestion module, followed sequentially by data cleaning, merging, and aggregation scripts, with forecasting logic optionally generated through a dedicated forecasting module prior to launching the interactive application using Streamlit. Forecast outputs are explicitly framed as exploratory and illustrative rather than predictive or operational, and the dashboard is intended to support analysis and understanding rather than official crime forecasting or decision-making. The project adheres to DBS Applied Research guidelines, demonstrates clear integration between research objectives and applied artefact development, and addresses ethical considerations associated with public-sector crime data through aggregation, transparency, and acknowledgment of data and modelling limitations, with potential future enhancements including advanced forecasting techniques, spatial mapping, downloadable filtered datasets, and expanded narrative explanations within the application.
 
-Live Application URL
-https://irishcrimedatatest.streamlit.app/
+->Download the raw CSO crime dataset (programmatic)
 
-This project is an interactive crime analytics dashboard for Ireland, built using Python and Streamlit.
-It was developed as part of an Applied Research Project to explore long-term crime trends using publicly available data from the Central Statistics Office (CSO), Ireland.
+python
+from datasets import download_recorded_crime
+download_recorded_crime(force=True)
 
-The main goal of the project is to make Irish crime data easy to explore, understand, and interpret through interactive visualisations, filters, and simple narrative insights.
+->Run the data processing pipeline
 
-Rather than presenting static charts, this dashboard allows users to ask questions of the data — such as how crime has changed over time, how it varies by region or Garda division, and which offence types are most common.
+python data_cleaning.py
+python data_merging.py
+python data_aggregation.py
 
-**What the dashboard allows you to do**
+->Generate the Crime forecasts
 
-Using the dashboard, you can:
+python crime_forecast.py
 
-1.Explore crime trends over time at a national level
-2.Compare crime across regions and Garda divisions
-3.Analyse crime by offence type
-4.View Garda station-level patterns
-5.Apply global filters for year range, region, division, and offence
-6.Read automatically generated summary insights
-7.View forecasted crime results for recent years (where available)
+->Launch Streamlit dashboard
 
-**Data source**
-
-All data used in this project comes from the Central Statistics Office (CSO), Ireland.
-
-The original CSO datasets were:
-
-1.Cleaned
-2.Standardised
-3.Enriched with regional and divisional information
-4.Aggregated into analysis-ready formats
-
-To keep the repository lightweight and reproducible, raw CSO datasets are not included.
-Only the final cleaned and aggregated datasets required to run the dashboard are stored in this repository.
-
-How the data is processed
-
-At a high level, the data workflow is:
-
-1.Ingest raw CSO crime datasets
-2.Clean and standardise key fields (years, regions, offence labels)
-3.Enrich records with Garda region and division information
-4.Aggregate data by year, region, division, offence, and station
-5.Generate final analytical CSV files
-6.Visualise and analyse the data using Streamlit
-
-This separation between raw data, processing scripts, and final datasets helps ensure clarity, reproducibility, and transparency.
-
-**PROJECT STRUCTURE**
-
-├── app.py                    # Main Streamlit application
-├── data/
-│   └── cleaned/              # Final analytical datasets used by the app
-├── data_cleaning.py          # Data cleaning logic
-├── data_merging.py           # Dataset merging and enrichment
-├── data_aggregation.py       # Aggregation scripts
-├── crime_forecast.py         # Forecast generation logic
-├── requirements.txt          # Python dependencies
-├── README.md
-└── .gitignore
-
-**Technologies used**
--Python
--Streamlit
--Pandas
--Altair
--Pathlib
--Scikit-learn (used offline for model training and experimentation)
-
-Running the project locally
-If you would like to run the dashboard locally:
-
-pip install -r requirements.txt
 streamlit run app.py
-
-
-**Limitations**
--Forecasts are illustrative and based on historical patterns
--The dashboard is intended for analysis and exploration, not as an official crime prediction tool
-
-**Future improvements**
--Possible future enhancements include:
--More advanced forecasting techniques
--Geographical maps for spatial analysis
--Downloadable filtered datasets
--Additional performance and model evaluation metrics
--Expanded narrative explanations within the app
-
-Author
-Jyothiswaruban Madurai Ravishankar
-MSc – Information System with Computing 
-Dublin Business School
-
