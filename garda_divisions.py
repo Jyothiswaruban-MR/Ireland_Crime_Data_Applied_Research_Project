@@ -63,7 +63,7 @@ def load_station_mapping() -> pd.DataFrame:
 
     df["division"] = df["division"].astype(str).str.strip()
 
-      div_region = load_division_region_map()
+    div_region = load_division_region_map()
 
     df = df.merge(div_region, on="division", how="left")
     print("→ After merging region map:", len(df))

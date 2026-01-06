@@ -36,7 +36,7 @@ def plot_forecast(plot_df: pd.DataFrame, level: str, top_n: int = 5) -> None:
     ranked by total crime volume.
     """
 
-    # Rank levels by total incidents
+    # Ranking levels by total incidents
     level_totals = (
         plot_df.groupby(level)["total_incidents"]
         .sum()
@@ -54,7 +54,7 @@ def plot_forecast(plot_df: pd.DataFrame, level: str, top_n: int = 5) -> None:
         plt.figure(figsize=(8, 4))
         plt.plot(sub["year"], sub["total_incidents"], marker="o", label="Actual")
 
-        # Plot predictions only where available
+        # Plotting predictions wherever available
         pred = pd.to_numeric(sub["prediction"], errors="coerce")
         mask = pred.notna()
         if mask.any():
@@ -133,13 +133,13 @@ def train_and_evaluate_level(
     })
 
 
-    # Save test predictions
+    # Saving test predictions
     out = test.copy()
     out["prediction"] = y_pred
     out_path = CLEAN_DIR / f"forecast_{level}_2022_2023.csv"
     out.to_csv(out_path, index=False)
 
-    # Save full timeline for plotting
+    # Saving the full timeline for plotting
     plot_df = data.copy()
     plot_df["prediction"] = float("nan")
     plot_df.loc[~train_mask, "prediction"] = y_pred
@@ -149,7 +149,7 @@ def train_and_evaluate_level(
 
     print(f"Saved forecast files for level '{level}'.")
 
-    # Show TOP N plots only
+    # Showing TOP N plots only
     if show_plots:
         plot_forecast(plot_df, level, top_n=5)
 
@@ -159,7 +159,7 @@ def run_all(train_end_year: int = 2021, show_plots: bool = True) -> None:
     train_and_evaluate_level(df, "region", train_end_year, show_plots)
     train_and_evaluate_level(df, "division", train_end_year, show_plots)
 
-    # Save performance table
+    # Saving performance table
     perf_df = pd.DataFrame(results)
     out_path = CLEAN_DIR / "forecast_model_performance_summary.csv"
     perf_df.to_csv(out_path, index=False)

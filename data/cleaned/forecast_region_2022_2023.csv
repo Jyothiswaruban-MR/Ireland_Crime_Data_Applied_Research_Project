@@ -1,13 +1,13 @@
 region,year,total_incidents,level_code,prediction
-Dublin Metropolitan Region,2022,91766,0,80938.83
-Dublin Metropolitan Region,2023,89110,0,80938.83
-Eastern Region,2022,38770,1,35128.96
-Eastern Region,2023,38389,1,35128.96
-North Western Region,2022,10281,2,10461.773333333333
-North Western Region,2023,9786,2,10461.773333333333
-Northern Region,2022,4790,3,5336.57
-Northern Region,2023,4250,3,5336.57
-Southern Region,2022,53556,4,46389.88
-Southern Region,2023,52170,4,46389.88
-Western Region,2022,10873,5,11872.796666666667
-Western Region,2023,11015,5,11872.796666666667
+Dublin Metropolitan Region,2022,113901,0,110439.81666666667
+Dublin Metropolitan Region,2023,113222,0,110439.81666666667
+Eastern Region,2022,56116,1,57430.11666666667
+Eastern Region,2023,56662,1,57430.11666666667
+North Western Region,2022,14301,2,16843.626666666667
+North Western Region,2023,14421,2,16843.626666666667
+Northern Region,2022,6693,3,7925.15
+Northern Region,2023,6526,3,7925.15
+Southern Region,2022,77299,4,72942.24333333333
+Southern Region,2023,78045,4,72942.24333333333
+Western Region,2022,17084,5,19714.46
+Western Region,2023,17400,5,19714.46

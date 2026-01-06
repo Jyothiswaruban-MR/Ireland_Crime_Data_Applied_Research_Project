@@ -1,133 +1,133 @@
 region,year,total_incidents
-Dublin Metropolitan Region,2003,95531
-Dublin Metropolitan Region,2004,99181
-Dublin Metropolitan Region,2005,101980
-Dublin Metropolitan Region,2006,103743
-Dublin Metropolitan Region,2007,108322
-Dublin Metropolitan Region,2008,115844
-Dublin Metropolitan Region,2009,111171
-Dublin Metropolitan Region,2010,108472
-Dublin Metropolitan Region,2011,103296
-Dublin Metropolitan Region,2012,100211
-Dublin Metropolitan Region,2013,94683
-Dublin Metropolitan Region,2014,96315
-Dublin Metropolitan Region,2015,97133
-Dublin Metropolitan Region,2016,85366
-Dublin Metropolitan Region,2017,90957
-Dublin Metropolitan Region,2018,92347
-Dublin Metropolitan Region,2019,99110
-Dublin Metropolitan Region,2020,81975
-Dublin Metropolitan Region,2021,77890
-Dublin Metropolitan Region,2022,91766
-Dublin Metropolitan Region,2023,89110
-Dublin Metropolitan Region,2024,92093
-Eastern Region,2003,39101
-Eastern Region,2004,39595
-Eastern Region,2005,45282
-Eastern Region,2006,48298
-Eastern Region,2007,53376
-Eastern Region,2008,55490
-Eastern Region,2009,54413
-Eastern Region,2010,51250
-Eastern Region,2011,49838
-Eastern Region,2012,47404
-Eastern Region,2013,43868
-Eastern Region,2014,42617
-Eastern Region,2015,41328
-Eastern Region,2016,36458
-Eastern Region,2017,40324
-Eastern Region,2018,39255
-Eastern Region,2019,41601
-Eastern Region,2020,33772
-Eastern Region,2021,34511
-Eastern Region,2022,38770
-Eastern Region,2023,38389
-Eastern Region,2024,39705
-North Western Region,2003,15442
-North Western Region,2004,14074
-North Western Region,2005,16048
-North Western Region,2006,16936
-North Western Region,2007,18461
-North Western Region,2008,18858
-North Western Region,2009,17188
-North Western Region,2010,15006
-North Western Region,2011,14133
-North Western Region,2012,12969
-North Western Region,2013,11838
-North Western Region,2014,11274
-North Western Region,2015,11079
-North Western Region,2016,10239
-North Western Region,2017,10493
-North Western Region,2018,10485
-North Western Region,2019,11298
-North Western Region,2020,9337
-North Western Region,2021,9860
-North Western Region,2022,10281
-North Western Region,2023,9786
-North Western Region,2024,9706
-Northern Region,2003,5162
-Northern Region,2004,5612
-Northern Region,2005,6287
-Northern Region,2006,6632
-Northern Region,2007,7126
-Northern Region,2008,6648
-Northern Region,2009,6026
-Northern Region,2010,6025
-Northern Region,2011,5686
-Northern Region,2012,5176
-Northern Region,2013,4319
-Northern Region,2014,4273
-Northern Region,2015,4416
-Northern Region,2016,4385
-Northern Region,2017,4925
-Northern Region,2018,5218
-Northern Region,2019,5377
-Northern Region,2020,4359
-Northern Region,2021,4542
-Northern Region,2022,4790
-Northern Region,2023,4250
-Northern Region,2024,4014
-Southern Region,2003,61279
-Southern Region,2004,62288
-Southern Region,2005,70218
-Southern Region,2006,77413
-Southern Region,2007,80140
-Southern Region,2008,82509
-Southern Region,2009,78144
-Southern Region,2010,74602
-Southern Region,2011,69360
-Southern Region,2012,63838
-Southern Region,2013,60266
-Southern Region,2014,57683
-Southern Region,2015,57280
-Southern Region,2016,49898
-Southern Region,2017,52924
-Southern Region,2018,54631
-Southern Region,2019,53670
-Southern Region,2020,46689
-Southern Region,2021,48689
-Southern Region,2022,53556
-Southern Region,2023,52170
-Southern Region,2024,51426
-Western Region,2003,12016
-Western Region,2004,11595
-Western Region,2005,13110
-Western Region,2006,15007
-Western Region,2007,16201
-Western Region,2008,16813
-Western Region,2009,16434
-Western Region,2010,14971
-Western Region,2011,13130
-Western Region,2012,12937
-Western Region,2013,11760
-Western Region,2014,11612
-Western Region,2015,11481
-Western Region,2016,10218
-Western Region,2017,11264
-Western Region,2018,10431
-Western Region,2019,11258
-Western Region,2020,9641
-Western Region,2021,10301
-Western Region,2022,10873
-Western Region,2023,11015
-Western Region,2024,10381
+Dublin Metropolitan Region,2003,119738
+Dublin Metropolitan Region,2004,127190
+Dublin Metropolitan Region,2005,136648
+Dublin Metropolitan Region,2006,179291
+Dublin Metropolitan Region,2007,198773
+Dublin Metropolitan Region,2008,206013
+Dublin Metropolitan Region,2009,183545
+Dublin Metropolitan Region,2010,172410
+Dublin Metropolitan Region,2011,159416
+Dublin Metropolitan Region,2012,147676
+Dublin Metropolitan Region,2013,131610
+Dublin Metropolitan Region,2014,128682
+Dublin Metropolitan Region,2015,130083
+Dublin Metropolitan Region,2016,115236
+Dublin Metropolitan Region,2017,118664
+Dublin Metropolitan Region,2018,120069
+Dublin Metropolitan Region,2019,126831
+Dublin Metropolitan Region,2020,109958
+Dublin Metropolitan Region,2021,108558
+Dublin Metropolitan Region,2022,113901
+Dublin Metropolitan Region,2023,113222
+Dublin Metropolitan Region,2024,119765
+Eastern Region,2003,48750
+Eastern Region,2004,51002
+Eastern Region,2005,59415
+Eastern Region,2006,76862
+Eastern Region,2007,84434
+Eastern Region,2008,91294
+Eastern Region,2009,87880
+Eastern Region,2010,79558
+Eastern Region,2011,78000
+Eastern Region,2012,72019
+Eastern Region,2013,64683
+Eastern Region,2014,65201
+Eastern Region,2015,63354
+Eastern Region,2016,57266
+Eastern Region,2017,62966
+Eastern Region,2018,60860
+Eastern Region,2019,61340
+Eastern Region,2020,55820
+Eastern Region,2021,57229
+Eastern Region,2022,56116
+Eastern Region,2023,56662
+Eastern Region,2024,58143
+North Western Region,2003,18862
+North Western Region,2004,17565
+North Western Region,2005,20755
+North Western Region,2006,27447
+North Western Region,2007,29822
+North Western Region,2008,30026
+North Western Region,2009,28742
+North Western Region,2010,25354
+North Western Region,2011,22647
+North Western Region,2012,19877
+North Western Region,2013,18154
+North Western Region,2014,19121
+North Western Region,2015,18361
+North Western Region,2016,16967
+North Western Region,2017,17044
+North Western Region,2018,17402
+North Western Region,2019,17988
+North Western Region,2020,15188
+North Western Region,2021,15948
+North Western Region,2022,14301
+North Western Region,2023,14421
+North Western Region,2024,14948
+Northern Region,2003,6620
+Northern Region,2004,7321
+Northern Region,2005,8129
+Northern Region,2006,11795
+Northern Region,2007,11626
+Northern Region,2008,11362
+Northern Region,2009,10532
+Northern Region,2010,9509
+Northern Region,2011,9200
+Northern Region,2012,7881
+Northern Region,2013,7296
+Northern Region,2014,7566
+Northern Region,2015,7493
+Northern Region,2016,7689
+Northern Region,2017,8514
+Northern Region,2018,8225
+Northern Region,2019,8368
+Northern Region,2020,7086
+Northern Region,2021,7012
+Northern Region,2022,6693
+Northern Region,2023,6526
+Northern Region,2024,6217
+Southern Region,2003,75311
+Southern Region,2004,80640
+Southern Region,2005,93227
+Southern Region,2006,125639
+Southern Region,2007,137922
+Southern Region,2008,146025
+Southern Region,2009,135264
+Southern Region,2010,128492
+Southern Region,2011,125623
+Southern Region,2012,114202
+Southern Region,2013,105405
+Southern Region,2014,103323
+Southern Region,2015,98164
+Southern Region,2016,87133
+Southern Region,2017,86887
+Southern Region,2018,86844
+Southern Region,2019,81561
+Southern Region,2020,73092
+Southern Region,2021,76836
+Southern Region,2022,77299
+Southern Region,2023,78045
+Southern Region,2024,76574
+Western Region,2003,14632
+Western Region,2004,14601
+Western Region,2005,17773
+Western Region,2006,24068
+Western Region,2007,25722
+Western Region,2008,26741
+Western Region,2009,26437
+Western Region,2010,24402
+Western Region,2011,23400
+Western Region,2012,22682
+Western Region,2013,20309
+Western Region,2014,21545
+Western Region,2015,21506
+Western Region,2016,18962
+Western Region,2017,20298
+Western Region,2018,18617
+Western Region,2019,18593
+Western Region,2020,17133
+Western Region,2021,16985
+Western Region,2022,17084
+Western Region,2023,17400
+Western Region,2024,17348
